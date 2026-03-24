@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Manager",
+  "version": "1.0.0",
+  "description": "A beautiful bookmark manager inspired by Raindrop.io. Save, organize, and search your bookmarks with collections and tags.",
+  "permissions": ["storage", "tabs", "bookmarks", "contextMenus", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Bookmark Manager",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  }
+}
